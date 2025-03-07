@@ -46,8 +46,12 @@
             padding-right: 10px; 
             padding-top: 10px;
             padding-bottom: 10px;}
-       
-
+        .lol{
+            text-align: center;
+            }
+            .g{margin-right: 100px;}
+            .h{margin-left: 100px;}
+ 
     </style>
 </head>
 <body class=" bg-blue-50">
@@ -65,7 +69,14 @@
                <div class="text-50xl"><img src="A5-Dev-Board/assets/checkbox.png" alt=""> </div>
                <div id="pendingCount" class="dm"><h3>23</h3></div>
            </div>
-        <div class="zm bg-blue-50"> <img src="A5-Dev-Board/assets/theme-btn.png" alt=""></div>
+        <div  class="zm bg-blue-50"> <button onclick="document.body.style.backgroundColor=['lightblue', 'red', 'yellow', 'green', 'purple', 'pink', 'orange', 'teal', 'gray', 'gold'][Math.floor(Math.random()*10)]"> <img src="A5-Dev-Board/assets/theme-btn.png" alt=""></button></div>
+
+
+
+        
+
+
+
         </div>
         </nav>
        
@@ -74,7 +85,7 @@
     <div class="flex gm">
         
         <div class="grid grid-cols-3 gap-4 bg-white px-5 py-5 rounded-xl">
-            <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 mx-auto">
+            <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 g">
                 <div class="zm bg-white">
                     <img src="A5-Dev-Board/assets/checkbox.png" alt="">
 
@@ -86,13 +97,19 @@
                 </div>
 
             </div>
+            <a href="index2.html">
+                
+            <button>
             <div class= "bg-gradient-to-r from-indigo-400 to-blue-400 text-black rounded-lg p-4 flex items-center"> 
                 <div><img src="A5-Dev-Board/assets/board.png" alt=""></div>
                 <div>  
-                    <h2 class="text-lg font-semibold">Discover Something New Today!</h2>
+                    <h2 class="text-lg font-semibold  text-white">Discover Something New Today!</h2>
                 </div>
             </div>
-            <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 mx-auto">
+        </button>
+        
+        </a>
+            <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 h">
                 <div class="zm bg-white">
                     <img src="A5-Dev-Board/assets/calender.png" alt="">
 
@@ -117,7 +134,7 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br> DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>                
+                    <button onclick="changeText1()" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>                
                 </div>
             </div>
 
@@ -128,7 +145,7 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Store the user’s preference in <br> localStorage...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>               
+                    <button onclick="changeText2()" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>               
                 </div>
             </div>
 
@@ -139,7 +156,7 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button  class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>             
+                    <button onclick="changeText3()" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>             
                 </div>
             </div>
 
@@ -150,7 +167,7 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button class="completeBtn  bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>           
+                    <button onclick="changeText4()" class="completeBtn  bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>           
                 </div>
             </div>
 
@@ -161,7 +178,7 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button class=" completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>
+                    <button onclick="changeText5()" class=" completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Completed</button>
                 </div>
             </div>
 
@@ -172,7 +189,8 @@
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
                     <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
-                    <button class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg ">Completed</button>                
+                    <button onclick="changeText6()"class=" completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg ">Completed</button>   
+                                 
                 </div>
             </div>
         </div>
@@ -180,8 +198,8 @@
 
 
 
-        <div class="bg-white rounded-xl mx-5 px-3 py-2">
-            <div class="flex justify-center">
+        <div class="bg-white rounded-xl mx-5 px-11 py-2">
+            <div class="flex justify-center gap-1">
                 <div>
                     <img src="A5-Dev-Board/assets/activity.png" alt="">
 
@@ -190,15 +208,79 @@
                     <h2 class="font-semibold">  Activity Log</h2>
                 </div>
             </div> <br>
-            <button class="bg-blue-500 text-white text-sm px-3 py-1 rounded-lg ">Clear History</button>
-             
+            <div class="lol">
+            <button class="bg-blue-500 text-white text-sm px-3 py-1 rounded-lg lol">Clear History</button></div>
 
 
+
+
+            
+            
+
+
+     
+
+<button onclick="changeText1()"></button>
+<p id="message" class="lol">Completed Tasks</p>
+
+<script>
+    function changeText1() {
+        document.getElementById("message").innerText = "Fix Mobile Button Issue";
+    }
+</script>
+
+<button onclick="changeText2()"></button>
+
+
+<script>
+    function changeText2() {
+        document.getElementById("message").innerText = "Add Dark Mode";
+    }
+</script>
+
+<button onclick="changeText3()"></button>
+
+
+<script>
+    function changeText3() {
+        document.getElementById("message").innerText = "Optimize Home Page";
+    }
+</script>  
+
+
+<button onclick="changeText4()"></button>
+
+
+<script>
+    function changeText4() {
+        document.getElementById("message").innerText = "Add new emoji 🐵";
+    }
+</script>
+
+
+<button onclick="changeText5()"></button>
+
+
+<script>
+    function changeText5() {
+        document.getElementById("message").innerText = "Integrate OpenAI API";
+    }
+</script>
+
+
+<button onclick="changeText6()"></button>
+
+
+<script>
+    function changeText6() {
+        document.getElementById("message").innerText = "Improve Job Searching";
+    }
+</script>
 
 
 
     </div>
-     
+    
     </main>
     <footer>
 
