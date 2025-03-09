@@ -12,16 +12,20 @@
           
         }
         .bold{font-weight: 600;}
+
         .um{ display: flex;
             gap: 10px;}
+
         .hm{display: flex;
             border-radius: 30px;
             padding-left: 15px; 
             padding-right: 15px; 
             padding-top: 12px;
             padding-bottom: 2px;}
+
         .bm{display: flex; 
             gap: 50px;}
+
         .nav{margin-left: 250px;
             margin-right: 250px; 
             display: flex ;
@@ -33,14 +37,19 @@
             padding-bottom: 10px;
             padding-left: 10px;
             padding-right: 10px;}
+
         .gm{
             margin-left: 250px;
             margin-right: 244px; 
             margin-top: 20px;
             
          }   
+
         .text-50xl{ width: 40px;}
-        .dm{ font-size: 20px; font-weight: 700;}
+
+        .dm{ font-size: 20px; 
+            font-weight: 700;}
+
         .zm{border-radius: 30px;
             padding-left: 10px; 
             padding-right: 10px; 
@@ -49,9 +58,18 @@
         .lol{
             text-align: center;
             }
-            .g{margin-right: 100px;}
-            .h{margin-left: 100px;}
- 
+
+        .g{margin-right: 100px;}
+
+        .h{margin-left: 100px;}
+
+        .m{  margin-right: 70%;}
+
+        .container {
+            display: grid;
+            grid-template-columns: 5fr 1fr; }
+
+
     </style>
 </head>
 <body class=" bg-blue-50">
@@ -60,13 +78,13 @@
         <nav class="nav">
         <div>
             <div class="um">
-             <div><img src="A5-Dev-Board/assets/logo.png" alt=""></div>
+             <div><img src="./A5-Dev-Board/assets/logo.png" alt=""></div>
              <div class="color text-5xl"><h2 class="color">Dev<span class="bold">Board</span></h2></div>
             </div> 
         </div>
         <div class="bm">
            <div class="hm bg-blue-50">
-               <div class="text-50xl"><img src="A5-Dev-Board/assets/checkbox.png" alt=""> </div>
+               <div class="text-50xl"><img src="./A5-Dev-Board/assets/checkbox.png" alt=""> </div>
                <div id="pendingCount" class="dm"><h3>23</h3></div>
            </div>
         <div  class="zm bg-blue-50"> <button onclick="document.body.style.backgroundColor=['lightblue', 'red', 'yellow', 'green', 'purple', 'pink', 'orange', 'teal', 'gray', 'gold'][Math.floor(Math.random()*10)]"> <img src="A5-Dev-Board/assets/theme-btn.png" alt=""></button></div>
@@ -87,7 +105,7 @@
         <div class="grid grid-cols-3 gap-4 bg-white px-5 py-5 rounded-xl">
             <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 g">
                 <div class="zm bg-white">
-                    <img src="A5-Dev-Board/assets/checkbox.png" alt="">
+                    <img src="./A5-Dev-Board/assets/checkbox.png" alt="">
 
                 </div>
                 <div>
@@ -95,15 +113,17 @@
                     <p id="completedCount" class="text-3xl font-semibold">05</p>
 
                 </div>
-
             </div>
+
+
+
             <a href="index2.html">
                 
             <button>
             <div class= "bg-gradient-to-r from-indigo-400 to-blue-400 text-black rounded-lg p-4 flex items-center"> 
-                <div><img src="A5-Dev-Board/assets/board.png" alt=""></div>
+                <div><img src="./A5-Dev-Board/assets/board.png" alt=""></div>
                 <div>  
-                    <h2 class="text-lg font-semibold  text-white">Discover Something New Today!</h2>
+                    <h2 class="text-lg font-semibold  text-white container discover-section">Discover Something New Today!</h2>
                 </div>
             </div>
         </button>
@@ -111,7 +131,7 @@
         </a>
             <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 h">
                 <div class="zm bg-white">
-                    <img src="A5-Dev-Board/assets/calender.png" alt="">
+                    <img src="./A5-Dev-Board/assets/calender.png" alt="">
 
                 </div>
                 <div>
@@ -129,7 +149,7 @@
 
             <!-- Task Card 1 -->
             <div class=" bg-blue-50 rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg p-4">ShopEase</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg p-4 m">ShopEase</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Fix Mobile Button Issue</h3><br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br> DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -140,7 +160,7 @@
 
             <!-- Task Card 2 -->
             <div class="bg-blue-50 rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg">CloudSync</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">CloudSync</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Add Dark Mode</h3> <br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Store the user’s preference in <br> localStorage...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -151,7 +171,7 @@
 
             <!-- Task Card 3 -->
             <div class="bg-blue-50  rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg">SwiftPay</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">SwiftPay</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Optimize Home Page</h3><br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -162,7 +182,7 @@
 
             <!-- Task Card 4 -->
             <div class="bg-blue-50  rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg">Meta</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Meta</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Add new emoji 🐵</h3><br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -173,7 +193,7 @@
 
             <!-- Task Card 5 -->
             <div class="bg-blue-50  rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg">Google LLC</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Google LLC</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Integrate OpenAI API</h3><br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -184,7 +204,7 @@
 
             <!-- Task Card 6 -->
             <div class="bg-blue-50  rounded-lg p-4 border-none">
-                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg">Glassdoor</p><br>
+                <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Glassdoor</p><br>
                 <h3 class="text-lg font-semibold text-gray-800">Improve Job Searching</h3><br>
                 <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
                 <div class="mt-3 flex justify-between items-center">
@@ -198,7 +218,7 @@
 
 
 
-        <div class="bg-white rounded-xl mx-5 px-11 py-2">
+        <div class="bg-white rounded-xl mx-5 px-11 py-2 ">
             <div class="flex justify-center gap-1">
                 <div>
                     <img src="A5-Dev-Board/assets/activity.png" alt="">
